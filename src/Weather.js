@@ -61,7 +61,7 @@ export default function Search() {
     <div className="gitLink">
     This project was coded by Paula Fonseca and is open-sourced on {""}  
         <a
-        href="https://github.com/fonsecapaulacf/Weather-React-Final.git"
+        href="https://github.com/fonsecapaulacf/Weather-React-Final-main.git"
         target="_blank"
         rel="noreferrer">Github</a>.
     </div>
@@ -87,7 +87,7 @@ export default function Search() {
     <div className="gitLink">
     This project was coded by Paula Fonseca and is open-sourced on {""}  
         <a
-        href="https://github.com/fonsecapaulacf/Weather-React-Final.git"
+        href="https://github.com/fonsecapaulacf/Weather-React-Final-main.git"
         target="_blank"
         rel="noreferrer">Github</a>.
     </div>
