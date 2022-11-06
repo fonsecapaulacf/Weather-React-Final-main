@@ -45,6 +45,12 @@ input {
   font-size: 40px;
 }
 
+.unit{
+  color: #EC6E4C;
+  font-size: 16px;
+}
+
+
 
 .btn{
     background-color:rgb(248, 212, 135) ;
@@ -79,4 +85,8 @@ input {
   color:#EC6E4C;
   margin: 2px;
   text-align: left;
+}
+
+.WeatherTemperature{
+  text-align: center;
 }

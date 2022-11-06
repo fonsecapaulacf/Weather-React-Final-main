@@ -12,7 +12,7 @@ import Search from './Weather';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Search />
+    <Search defaultCity="Paris"/>
   </React.StrictMode>
 );
 

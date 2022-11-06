@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css';
-
 import "./styles.css";
+import WeatherTemperature from "./WeatherTemperature";
 
-export default function Search() {
-  let [city, setCity] = useState("");
+
+export default function Search(props) {
+  let [city, setCity] = useState(props.defaultCity);
   let [sentence, setSentence] = useState("");
   let [loaded, setLoaded] = useState(null);
 
@@ -34,10 +35,11 @@ export default function Search() {
   let form = (
     <div className="Search">
       <form onSubmit={changeSentence}>
-        <input className="city-input"
+        <input className="city-input form-control"
           type="search"
           placeholder="Search for a city"
           onChange={updateCity}
+          autoFocus="on"
         />
         <input className="btn" type="submit" value="Search" />
       </form>
@@ -51,7 +53,7 @@ export default function Search() {
         
         {form}
         <h4>{city}</h4>
-        <div className="temperature">{Math.round(sentence.temperature)} ºC </div>
+        <WeatherTemperature celsius={sentence.temperature} />
         <ul className="info"> 
           <li>Description: {sentence.description}</li>
           <li>Humidity: {sentence.humidity}%</li>
@@ -72,16 +74,23 @@ export default function Search() {
 
   } else {
     return (
+
       <div className="container">
         <div className="weather-app-wrapper">
       
       {form}
-      <h4>Porto</h4>
-      <div className="temperature">22ºC</div>
+      <h4> </h4>
+
+      <div className="WeatherTemperature">
+        <span className="temperature"></span>
+        <span className="unit">ºC |ºF
+        </span> 
+    </div>
+
     <ul className="info">
-      <li>Description: Sunny</li>
-      <li>Humidity: 30%</li>
-      <li>Wind: 30 km/h</li>
+      <li>Description: </li>
+      <li>Humidity: </li>
+      <li>Wind: </li>
       <li></li>
     </ul>
 
