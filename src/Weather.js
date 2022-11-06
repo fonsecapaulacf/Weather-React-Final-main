@@ -79,18 +79,18 @@ export default function Search(props) {
         <div className="weather-app-wrapper">
       
       {form}
-      <h4> </h4>
+      <h4> Braga</h4>
 
       <div className="WeatherTemperature">
-        <span className="temperature"></span>
+        <span className="temperature">22</span>
         <span className="unit">ºC |ºF
         </span> 
     </div>
 
     <ul className="info">
-      <li>Description: </li>
-      <li>Humidity: </li>
-      <li>Wind: </li>
+      <li>Description:Sunny </li>
+      <li>Humidity:23% </li>
+      <li>Wind: 5 Km/h</li>
       <li></li>
     </ul>
 
