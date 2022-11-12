@@ -48,7 +48,7 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={changeSentence}>
           <div className="row">
-            <div className="col-9">
+            <div className="col-md-9">
             <input
               className="Search-form form-control"
               type="search"
@@ -57,7 +57,7 @@ export default function Weather(props) {
               autoFocus="on"
             />
             </div>
-            <div className="col-3">
+            <div className="col-md-3">
             <input 
               className="btn w-100" 
               type="submit" 
