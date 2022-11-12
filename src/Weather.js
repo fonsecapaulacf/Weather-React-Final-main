@@ -4,7 +4,7 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
 import axios from "axios";
-import "./styles.css";
+import "./Weather.css";
 
 
 
@@ -50,16 +50,16 @@ export default function Weather(props) {
           <div className="row">
             <div className="col-9">
             <input
-              className="form-control"
+              className="Search-form form-control"
               type="search"
-              placeholder="Search for a city"
+              placeholder="Search for a city..."
               onChange={updateCity}
               autoFocus="on"
             />
             </div>
             <div className="col-3">
             <input 
-              className="btn btn-primary w-100" 
+              className="btn w-100" 
               type="submit" 
               value="Search" />
               </div>

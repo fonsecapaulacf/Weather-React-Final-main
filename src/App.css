@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sonodisplay=swap');
+
+.App {
+    max-width: 800px;
+    margin: 70px auto;
+    font-family: 'Sono', sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px ;
+    font-weight: 200;
+}
+
+.App footer{
+    text-align: center;
+    margin-top: 30px;
+    font-size:12px;
+}
+
+.App footer .links{
+    color:#DDBEAA;
+}
+
+.App footer .links:hover{
+    color: #5BA199;
+}
