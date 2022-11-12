@@ -3,11 +3,12 @@ body{
   margin-top: 100px;
 }
 
-ul {
-  list-style-type: none;
+.Weather .Search-form{
+  background-color: #5ba1997a;
+  color: white;
 }
 
-.btn{
+.Weather .btn{
     background-color:#DDBEAA ;
     color: white;
     font-size: 17px;
@@ -17,16 +18,13 @@ ul {
     border-style: none;
     }
 
-.btn:hover{
+.Weather .btn:hover{
       background-color: #5BA199;
   }
 
-.Weather .Search-form{
-  background-color: #5ba1997a;
-  color: white;
-
+ul{
+  list-style-type: none;
 }
-
 
 .WeatherInfo h1 {
   margin-top: 40px;
@@ -48,8 +46,7 @@ ul {
     position: relative;
     left:30px
     
-  }
-  
+}  
 
 .WeatherTemperature .unit{
     color: #BBC6C8;
@@ -57,7 +54,7 @@ ul {
     position: relative;
     top:-35px;
     left:30px;
-  }
+}
 
 .WeatherInfo .Icon{
   position: relative;
@@ -76,15 +73,14 @@ ul {
   color: #DDBEAA;
 }
 
-
-.WeatherForecast-temperature-max{
-    font-weight: 600;
-  }
-
 .WeatherForecast-day{
   color: #DDBEAA;
 }
- 
+
+.WeatherForecast-temperature-max{
+    font-weight: 600;
+}
+
 .WeatherForecast-day-icon{
   text-align: center;
   margin: 15px;
